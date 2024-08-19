@@ -17,5 +17,5 @@ export default defineConfig({
 
     },
   },
-  base: process.env.BASE_PATH ? "/test1/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/test1/" : "./",
 });
