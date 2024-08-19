@@ -8,6 +8,8 @@ export default defineConfig({
   root,
   build: {
     outDir,
+    ssetsDir: './',
+    publicPath: './',
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
