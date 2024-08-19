@@ -12,6 +12,10 @@ export default defineConfig({
       input: {
         main: resolve(root, "index.html"),
         sample: resolve(root, "sample", "index.html"),
+        sample2: resolve(root, "sample2", "index.html"),
+      },
+      output: {
+        entryFileNames: '[name].js',
       },
     },
     base: "/test1/",
