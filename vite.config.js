@@ -17,5 +17,5 @@ export default defineConfig({
 
     },
   },
-  base: "/test1/",
+  base: process.env.BASE_PATH ? "/test1/" : "/",
 });
