@@ -7,7 +7,7 @@ const outDir = resolve(__dirname, "dist");
 export default defineConfig({
   root,
   build: {
-    outDir,
+    outDir: resolve(__dirname, "dist"),
     assetsDir: './',
     publicPath: './',
     rollupOptions: {
@@ -20,6 +20,6 @@ export default defineConfig({
         entryFileNames: '[name].js',
       },
     },
-    base: "/test1/",
   },
+  base: "/test1/",
 });
